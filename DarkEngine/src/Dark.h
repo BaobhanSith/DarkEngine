@@ -2,7 +2,7 @@
 // For use by Dark Engine applications
 
 #include "Dark/Application.h"
-#include "stdio.h"
+#include "Dark/Log.h"
 
 //------ ENTRY POINT-----
-#include "EntryPoint.h";
+#include "Dark/EntryPoint.h";

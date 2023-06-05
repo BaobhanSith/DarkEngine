@@ -11,12 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\EntryPoint.h" />
+    <ClInclude Include="src\Dark\Log.h" />
+    <ClInclude Include="src\Dark\EntryPoint.h" />
     <ClInclude Include="src\Dark.h" />
     <ClInclude Include="src\Dark\Application.h" />
     <ClInclude Include="src\Dark\Core.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Dark\Log.cpp" />
     <ClCompile Include="src\Dark\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -66,6 +68,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)DK_PLATFORM_WINDOWS;DK_BUILD_DLL;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)DarkEngine\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -80,6 +83,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)DK_PLATFORM_WINDOWS;DK_BUILD_DLL;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)DarkEngine\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

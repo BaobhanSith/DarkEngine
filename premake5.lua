@@ -18,6 +18,9 @@ project "DarkEngine"
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+    pchheader "dkpch.h"
+    pchsource "DarkEngine/src/dkpch.cpp"
+
     files
     {
         "%{prj.name}/src/**.h",

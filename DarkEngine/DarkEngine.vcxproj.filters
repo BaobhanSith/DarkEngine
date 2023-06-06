@@ -4,6 +4,9 @@
     <Filter Include="Dark">
       <UniqueIdentifier>{0705847C-F33B-850D-9C28-6B10883E010F}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Dark\Events">
+      <UniqueIdentifier>{0BE36E4A-7798-E73F-008D-E1166C41DE43}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Dark.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Dark\EntryPoint.h">
       <Filter>Dark</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Dark\Events\ApplicationEvent.h">
+      <Filter>Dark\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Dark\Events\Event.h">
+      <Filter>Dark\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Dark\Events\KeyEvent.h">
+      <Filter>Dark\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Dark\Events\MouseEvent.h">
+      <Filter>Dark\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Dark\Log.h">
       <Filter>Dark</Filter>

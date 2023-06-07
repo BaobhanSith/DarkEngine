@@ -10,6 +10,11 @@ workspace "DarkEngine"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["GLFW"] = "DarkEngine/vendor/GLFW/include"
+
+include "DarkEngine/vendor/GLFW"
+
 project "DarkEngine"
     location "DarkEngine"
     kind "SharedLib"
@@ -30,7 +35,14 @@ project "DarkEngine"
     includedirs
     {
         "%{prj.name}/src",
-        "%{prj.name}/vendor/spdlog/include"
+        "%{prj.name}/vendor/spdlog/include",
+        "%{IncludeDir.GLFW}"
+    }
+
+    links
+    {
+        "GLFW",
+        "opengl32.lib"
     }
 
     filter "system:windows"

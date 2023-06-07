@@ -7,6 +7,9 @@
     <Filter Include="Dark\Events">
       <UniqueIdentifier>{0BE36E4A-7798-E73F-008D-E1166C41DE43}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Dark.h" />
@@ -34,6 +37,12 @@
     <ClInclude Include="src\Dark\Log.h">
       <Filter>Dark</Filter>
     </ClInclude>
+    <ClInclude Include="src\Dark\Window.h">
+      <Filter>Dark</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\WindowsWindow.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
     <ClInclude Include="src\dkpch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -42,6 +51,9 @@
     </ClCompile>
     <ClCompile Include="src\Dark\Log.cpp">
       <Filter>Dark</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\WindowsWindow.cpp">
+      <Filter>Platform</Filter>
     </ClCompile>
     <ClCompile Include="src\dkpch.cpp" />
   </ItemGroup>

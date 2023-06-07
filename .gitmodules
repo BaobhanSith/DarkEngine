@@ -1,3 +1,6 @@
 [submodule "DarkEngine/vendor/spdlog"]
 	path = DarkEngine/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "DarkEngine/vendor/GLFW"]
+	path = DarkEngine/vendor/GLFW
+	url = https://github.com/glfw/glfw
